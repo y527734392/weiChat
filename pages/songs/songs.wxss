@@ -1,0 +1,220 @@
+.player .content {
+  background: #f7f7f7;
+}
+
+.player .content .header {
+  position: relative;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.player .content .header .song .song-title {
+  width: 19.25925926rem;
+  text-align: center;
+  margin: 1.48148148rem auto 0;
+  font-size: 1.03703704rem;
+  line-height: 1.55555556rem;
+  font-family: "Microsoft YaHei";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #333;
+}
+
+.player .content .header .song .user-name {
+  text-align: center;
+  font-size: 0.88888889rem;
+  line-height: 1.33333333rem;
+  font-family: "Microsoft YaHei";
+  padding: 0.66666667rem 0 2.22222222rem 0;
+  color: #999;
+}
+
+.player .content .header .song .single {
+  width: 11.88888889rem;
+  height: 12.77777778rem;
+  margin: 0 auto 1.66666667rem;
+  position: relative;
+}
+
+.player .content .header .song .single .single_pic {
+  width: 100%;
+  height: 100%;
+  background: url(//mu4.bdstatic.com/st/i/d1261bca6a.png) no-repeat center / cover;
+}
+
+.player .content .header .single_play_bar {
+  width: 2.96296296rem;
+  height: 2.96296296rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: -1.48148148rem 0 0 -1.48148148rem;
+  background: url(//mu4.bdstatic.com/st/i/d184c75d1d.png) no-repeat 0px top / cover;
+}
+
+.player .content .header .song .play-progress {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  height: 36px;
+  clear: both;
+}
+
+.player .content .header .song .play-progress .time {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  font-size: 0.66666667rem;
+  color: #999;
+  width: 20%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.player .content .header .song .play-progress .time.time-left {
+  left: 100%;
+}
+
+.player .content .header .song .play-progress .progress-bar {
+  height: 100%;
+  position: absolute;
+  width: 90%;
+  top:20rpx;
+  left:50%;
+  margin: 0 0 0 -45%;
+}
+
+.player .content .header .song .play-progress .progress-bar > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #e5e5e5;
+}
+
+.player .content .header .song .play-progress .progress-bar .progress {
+  background-color: #3f3f3f;
+  height: 100%;
+  position: relative;
+  width: 0;
+}
+
+.player .content .header .song .play-progress .progress-bar .progress .btn-bar-play {
+  position: absolute;
+  top: -17px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+}
+
+.player .content .header .song .play-progress .progress-bar .progress .btn-bar-play:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background-color: rgba(63, 63, 63, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+.player .content .header .song .play-progress .progress-bar .progress .btn-bar-play:after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background-color: #3f3f3f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.player .content .header .single_play_bar.btn-bar-play {
+  background-position: 0 top;
+}
+
+.player .content .header .single_play_bar.btn-bar-pause {
+  background-position: 0 bottom;
+}
+
+.player .content .song_lyrics {
+  width: 80%;
+  margin: 2.03703704rem auto 0;
+  text-align: center;
+}
+
+.player .content .song_lyrics p {
+  font-size: 1.03703704rem;
+  line-height: 1.55555556rem;
+  font-family: "Microsoft YaHei";
+  line-height: 1.85185185rem;
+  color: #999;
+  height: 5.55555556rem;
+  overflow: hidden;
+}
+
+.player .content .song_lyrics .slyrics_btn {
+  padding: 1.48148148rem 0 1.48148148rem 0;
+  position: relative;
+}
+
+.player .content .song_lyrics .slyrics_btn span {
+  display: inline-block;
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  -webkit-border-radius: 1.11111111rem;
+  border-radius: 1.11111111rem;
+  border: 1px solid #dedede;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 0.37037037rem;
+}
+
+.player .content .song_lyrics .slyrics_btn.down span:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0.2962963rem 0 0 0.16666667rem;
+  border-left: 0.2962963rem solid transparent;
+  border-right: 0.2962963rem solid transparent;
+  border-top: 0.37037037rem solid #999999;
+}
+
+.player .content .song_lyrics .slyrics_btn.up span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0.2962963rem 0 0 0.16666667rem;
+  border-left: 0.2962963rem solid transparent;
+  border-right: 0.2962963rem solid transparent;
+  border-bottom: 0.37037037rem solid #999999;
+}
+
+.wx-slider-track {
+  background: #000 !important;
+}
+.wx-slider-handle-wrapper .wx-slider-handle {
+  width: 30rpx;
+  height: 30rpx;
+  margin: -15rpx 0 0 -15rpx;
+  background: #666 !important;
+}

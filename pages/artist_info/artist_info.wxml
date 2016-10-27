@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="home">
+  <view class="user_info">
+    <view class="dl clearfix">
+      <view class="ui_icon">
+        <view class="ui_icon_per" style="background-image: url({{userInfo.avatar_url}});"></view>
+      </view>
+      <view class="ui_content">
+        <view class="ui_title clearfix">
+          <view class="view">{{userInfo.un}}</view>
+          <view class="p combo"></view>
+          <view class='ui_genre clearfix'>{{userInfo.genre_info[0].genre_name}}</view>
+        </view>
+        <view class="ui_signature" wx:if="{{userInfo.signature == ''}}">暂无签名</view>
+        <view class="ui_signature" wx:else>{{userInfo.signature}}</view>  
+        <view class="fansAndfollow clearfix">
+          <view class='p'>粉丝<view class="span">{{userInfo.fans_cnt}}</view></view>
+          <view class='p'>关注<view class="span">{{userInfo.follow_cnt}}</view></view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  <view class="user_content with_bottom">
+    <view class="tabtitle clearfix">
+           <navigator url="../index/index?id={{userInfo.artist_id}}" redirect>
+                <view class='p'><view class="span reward">作品</view></view>
+            </navigator>
+            <navigator url="../artist_info/index?id={{userInfo.artist_id}}" redirect>
+                <view class='p'><view class="span cur cash">音乐人信息</view></view>
+            </navigator>
+    </view>
+    <view class="tabbox">
+            <view class="tabdetail personal cur" style="min-height: 568px;">
+                <view class="info_list">
+                    <view class="infol_title">基本资料</view>
+                    <view class='p'>地区：{{userInfo.area}}</view>
+                    <view class='p'>生日：{{userInfo.birth}}</view>
+                </view>
+                <view class="info_list">
+                    <view class="infol_title">喜欢的流派</view>
+                    <view class="clearfix">
+                        <view class='p'>暂未选择</view>
+                    </view>
+                </view>
+                <view class="info_list">
+                    <view class="infol_title">个人介绍</view>
+                    <view class='p'>暂未填写</view>
+                </view>
+                    <view class="info_list">
+                        <view class="infol_title">演艺经历</view>
+                        <view class='p'>暂未填写</view>
+                    </view>
+                    <view class="info_list">
+                        <view class="infol_title">主要成就</view>
+                        <view class='p'>暂未填写</view>
+                    </view>
+            </view>
+        </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="player">
+    <view class="content">
+        <view class="header">
+            <view class="lyric song pause-state">
+                <view class="song-title">{{songsInfo.title}}</view>
+                <view class="user-name">{{songsInfo.artist}}</view>
+                <view class="single">
+                    <view class="single_pic" style="background-image: url('{{songsInfo.img_url}}'); -webkit-mask: url(http://mu4.bdstatic.com/st/i/d1261bca6a.png) center center / cover no-repeat;"></view>
+                    <block wx:if="{{playing === true}}">
+                        <view class="single_play_bar btn-bar-pause" bindtap="pause"></view>
+                    </block>
+                    <block wx:if="{{playing === false}}">
+                        <view class="single_play_bar btn-bar-play" bindtap="play" data-url='{{songsInfo.link_list[0].file_link}}' data-title="{{songsInfo.title}}"></view>
+                    </block>
+                </view>
+                <view class="play-progress">
+                    <view class="time time-pos">{{playTime}}</view>
+                    <view class="time time-left">03:35</view>
+                    <slider class="slider progress-bar" min="0" max="269" step="1" value="{{playTime}}" bindchange="seek"></slider>
+
+                </view>
+            </view>
+        </view>
+        <view class="song_lyrics">
+            <view style="line-height: 25px">暂无歌词</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,393 @@
+/**index.wxss**/
+.home .user_info {
+    background: #f1f1f1 url(http://mu4.bdstatic.com/st/i/b90937dcaf.jpg) no-repeat top center;
+    -webkit-background-size: 100% 280rpx;
+    background-size: 100% 280rpx;
+    padding: 84rpx 0 55.2rpx;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.home .user_info .dl {
+    width: 80%;
+    margin: auto;
+}
+
+.home .user_info .dl .ui_icon {
+    float: left;
+    width: 126rpx;
+    height: 126rpx;
+    position: relative;
+    margin-right: 28.8rpx;
+}
+
+.home .user_info .dl .ui_icon .ui_icon_per {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.home .user_info .dl .ui_icon span {
+    width: 28.8rpx;
+    height: 28.8rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(http://mu4.bdstatic.com/st/i/627ace40c1.png) no-repeat center / cover;
+}
+
+.home .user_info .dl .ui_content {
+    float: left;
+    width: 421.2rpx;
+}
+
+.home .user_info .dl .ui_content .ui_title {
+    padding-bottom: 10.4rpx;
+}
+
+.home .user_info .dl .ui_content .ui_title .h5 {
+    float: left;
+    font-size: 28.8rpx;
+    line-height: 45rpx;
+    font-family: "Microsoft YaHei";
+    line-height: 42rpx;
+    color: #333333;
+    font-weight: normal;
+}
+
+.home .user_info .dl .ui_content .ui_title .p {
+    float: left;
+    margin: 5rpx 15.7rpx 0 15.7rpx;
+    width: 56.16rpx;
+    height: 28rpx;
+    -webkit-border-radius: 550rpx;
+    border-radius: 550rpx;
+    overflow: hidden;
+}
+
+.home .user_info .dl .ui_content .ui_title .boy {
+    background: url('http://mu4.bdstatic.com/st/i/4aad59aac7.png') no-repeat 0 -28rpx;
+    -webkit-background-size: 28rpx 56rpx;
+    background-size: 28rpx 56rpx;
+}
+
+.home .user_info .dl .ui_content .ui_title .girl {
+    background: url('http://mu4.bdstatic.com/st/i/4aad59aac7.png') no-repeat 0 0rpx;
+    -webkit-background-size: 28rpx 56rpx;
+    background-size: 28rpx 56rpx;
+}
+
+.home .user_info .dl .ui_content .ui_title .combo {
+    background: url('http://mu4.bdstatic.com/st/i/4ede41f975.png') no-repeat;
+    -webkit-background-size: 56rpx 28rpx;
+    background-size: 56rpx 28rpx;
+}
+
+
+
+.home .user_info .dl .ui_content .ui_title .ui_genre {
+    float: left;
+    font-size: 20.8rpx;
+    font-family: "Microsoft YaHei";
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 28.8rpx;
+    border-radius: 28.8rpx;
+    padding: 0 30rpx;
+    line-height: 28.8rpx;
+    color: #333;
+}
+
+.home .user_info .dl .ui_content .ui_signature {
+    font-size: 20.78rpx;
+    line-height: 28.8rpx;
+    font-family: "Microsoft YaHei";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36.22rpx;
+    color: #999999;
+}
+
+.home .user_info .dl .fansAndfollow .p {
+    float: left;
+    margin-right: 20.8rpx;
+    font-size: 20.8rpx;
+    line-height: 28.8rpx;
+    font-family: "Microsoft YaHei";
+    line-height: 36.4rpx;
+    color: #999999;
+    padding-top: 5.32rpx;
+}
+
+.home .user_info .dl .fansAndfollow .p .span {
+    display: inline-block;
+    padding-left: 0.37037037rpx;
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+.home .user_content {
+    padding-top: 4.5rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home .user_content .tabtitle {
+    margin-top: 3.25925926rem;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.home .user_content .tabtitle .p {
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 2.92592593rem;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.home .user_content .tabtitle p.only {
+    width: 100%;
+}
+
+.home .user_content .tabtitle .span {
+    display: inline-block;
+    position: relative;
+}
+
+.home .user_content .tabtitle .span.cur:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ff0f50;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.home .user_content .tabbox {
+    background: #fff;
+}
+
+.home .user_content .tabbox .tabdetail {
+    display: none;
+}
+
+.home .user_content .tabbox .tabdetail.cur {
+    display: block;
+}
+
+.home .user_content .tabbox .tabdetail .h3 {
+    font-size: 1.03703704rem;
+    line-height: 1.55555556rem;
+    font-family: "Microsoft YaHei";
+    line-height: 2.96296296rem;
+    color: #333333;
+    text-align: center;
+    font-weight: normal;
+    padding: 0.37037037rem 0;
+    position: relative;
+}
+
+.home .user_content .tabbox .tabdetail .h3:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 8px;
+    background-color: #d1d1d1;
+    -webkit-transform: rotate(45deg);
+    margin-top: -1px;
+}
+
+.home .user_content .tabbox .tabdetail .h3:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 8px;
+    background-color: #d1d1d1;
+    -webkit-transform: rotate(-45deg);
+    margin-top: -6px;
+}
+
+.home .user_content .tabbox .tabdetail .albums {
+    width: 90%;
+    margin: auto;
+}
+
+.home .user_content .tabbox .tabdetail .albums .albums_list .li {
+    float: left;
+    width: 31.3%;
+    margin: auto;
+    padding-right: 3%;
+    padding-bottom: 0.92592593rem;
+}
+
+.home .user_content .tabbox .tabdetail .albums .albums_list .li:last-child {
+    padding-right: 0;
+}
+
+.home .user_content .tabbox .tabdetail .albums .albums_list .li .div {
+    width: 210rpx;
+    height: 210rpx;
+    overflow: hidden;
+    margin: 0 auto 0.37037037rem;
+    background: url(http://mu4.bdstatic.com/st/i/c63c50d2f4.png) no-repeat center / cover;
+}
+
+.home .user_content .tabbox .tabdetail .albums .albums_list .li .h4 {
+    width: 7.48148148rem;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.88888889rem;
+    line-height: 1.33333333rem;
+    font-family: "Microsoft YaHei";
+    line-height: 1.40740741rem;
+    color: #333333;
+    font-weight: normal;
+    padding-bottom: 0.37037037rem;
+}
+
+.home .user_content .tabbox .tabdetail .albums .albums_list .li .p {
+    width: 7.48148148rem;
+    margin: auto;
+    color: #999;
+    font-size: 0.74074074rem;
+    line-height: 1.11111111rem;
+    font-family: "Microsoft YaHei";
+}
+
+.home .user_content .tabbox .tabdetail .songs {
+    width: 90%;
+    margin: auto;
+}
+
+.home .user_content .tabbox .mbar {
+    height: 0.55555556rem;
+    width: 100%;
+    background: #f5f5f5;
+}
+.songs_list {
+    border-top: 1px solid #eee;
+    padding-bottom: 1.85185185rem;
+}
+
+.songs_list .li {
+    height: 4.40740741rem;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.songs_list .li .song_title {
+    float: left;
+    width: 80%;
+}
+
+.songs_list .li .song_title .h5 {
+    font-size: 1.03703704rem;
+    line-height: 1.55555556rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #333333;
+    line-height: 1.48148148rem;
+    padding: 0.74074074rem 0 0.37037037rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.songs_list .li .song_title .h5 .span {
+    display: inline-block;
+    width: 1.11111111rem;
+    height: 0.51851852rem;
+    vertical-align: top;
+    background: url(http://mu4.bdstatic.com/st/i/1ac6022d81.png) no-repeat center / cover;
+}
+
+.songs_list .li .song_title .p {
+    font-size: 0.74074074rem;
+    line-height: 1.11111111rem;
+    font-family: "Microsoft YaHei";
+    color: #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.songs_list .li .songs_playbar {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url('http://mu4.bdstatic.com/st/i/cff0b2eb42.png') no-repeat 0 0px;
+    -webkit-background-size: 20px 40px;
+    background-size: 20px 40px;
+    margin-top: 1.2962963rem;
+}
+
+.songs_list .li.playing-state .songs_playbar {
+    background: url('http://mu4.bdstatic.com/st/i/cff0b2eb42.png') no-repeat 0 -20px;
+    -webkit-background-size: 20px 40px;
+    background-size: 20px 40px;
+}
+
+.songs_list .li.playing-state h5,.songs_list li.playing-state p,.songs_list li.playing-state .song_num {
+    color: #ff0f50;
+}
+
+.songs_list .li.pause-state .songs_playbar {
+    background: url('http://mu4.bdstatic.com/st/i/cff0b2eb42.png') no-repeat 0 0px;
+    -webkit-background-size: 20px 40px;
+    background-size: 20px 40px;
+}
+
+.songs_list .li.pause-state .h5,.songs_list .li.pause-state .p,.songs_list .li.pause-state .song_num {
+    color: #ff0f50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

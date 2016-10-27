@@ -1,0 +1,21 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}

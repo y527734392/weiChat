@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="home">
+  <view class="user_info">
+    <view class="dl clearfix">
+      <view class="ui_icon">
+        <view class="ui_icon_per" style="background-image: url({{userInfo.avatar_url}});"></view>
+      </view>
+      <view class="ui_content">
+        <view class="ui_title clearfix">
+          <view class="view">{{userInfo.un}}</view>
+          <view class="p combo"></view>
+          <view class='ui_genre clearfix'>{{userInfo.genre_info[0].genre_name}}</view>
+        </view>
+        <view class="ui_signature" wx:if="{{userInfo.signature == ''}}">暂无签名</view>
+        <view class="ui_signature" wx:else>{{userInfo.signature}}</view>  
+        <view class="fansAndfollow clearfix">
+          <view class='p'>粉丝<view class="span">{{userInfo.fans_cnt}}</view></view>
+          <view class='p'>关注<view class="span">{{userInfo.follow_cnt}}</view></view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  <view class="user_content with_bottom">
+    <view class="tabtitle clearfix">
+            <navigator url="../brand/index?id={{userInfo.artist_id}}" redirect>
+                <view class='p'><view class="span cur reward">作品</view></view>
+            </navigator>
+            <navigator url="../artist_info/artist_info?id={{userInfo.artist_id}}" redirect>
+                <view class='p'><view class="span cash">音乐人信息</view></view>
+            </navigator>
+    </view>
+    <view class="tabbox">
+                <view class="tabdetail works cur" style="min-height: 568px;">
+                            <view class="albums">
+                                <view class="h3 modal_goApp">专辑({{albumsInfo.list.length}})</view>
+                                <view class="albums_list clearfix">
+                                        <block wx:for="{{albumsInfo.list}}">
+                                            <view class='li'>
+                                                <view class="div albums_pic url" data-url="album/{{item.id}}" style="background: url('{{item.img_url}}') center center / cover no-repeat;"></view>
+                                                <view class="h4 albums_title">{{item.title}}</view>
+                                                <view class="p albums_time">{{item.publish_time}}</view>
+                                            </view>
+                                        </block>
+
+                                        
+                                </view>
+                            </view>
+                            <view class="mbar"></view>
+                            <view class="songs">
+                                <navigator url="../audio/audio">
+                                    <view class="h3 odal_goApp">单曲(50)</view>
+                                </navigator>
+                                <view class="songs_list play-list">
+                                    <block wx:for="{{songsInfo.list}}">
+                                        <navigator url="../songs/songs?songid={{item.song_id}}">
+                                            <view class="li song-pic song play clearfix" data-song_id="{{item.song_id}}" data-play_type="list">
+                                            <view class="song_title">
+                                                <view class='h5'>{{item.title}}
+                                                        <view class='span'></view>
+                                                </view>
+                                                <view class='p'>{{item.album_info.title}}</view>
+                                            </view>
+                                            <view class="songs_playbar"></view>
+                                        </view>
+                                        </navigator>
+                                    </block>
+                                </view>
+                                    <view class="modal_goApp seeMore">查看更多作品&nbsp;&gt;</view>
+                            </view>
+                </view>
+        </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/artist_info/artist_info",
+    "pages/audio/audio",
+    "pages/songs/songs",    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgba(0,0,0,0.8)",
+    "navigationBarTextStyle":"#fff"
+  },
+  "debug": false
+}
