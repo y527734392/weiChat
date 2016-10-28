@@ -1,0 +1,23 @@
+.artistlist {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 30rpx;
+    border-bottom: 1rpx solid #ddd;
+}
+.artistlist .icon {
+    float: left;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    background-size: 80rpx 80rpx;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 30rpx;
+}
+.artistlist .name {
+    float: left;
+    line-height: 80rpx;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}

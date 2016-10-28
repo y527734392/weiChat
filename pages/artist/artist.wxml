@@ -1,0 +1,8 @@
+<view class="artist">
+    <block wx:for="{{artistList}}">
+        <navigator class="artistlist clearfix" url="../index/index?artistid={{item.artist_id}}">
+            <view class="icon" style="background-image: url({{item.avatar_url}});"></view>
+            <view class="name">{{item.un}}</view>
+        </navigator>
+    </block>
+</view>

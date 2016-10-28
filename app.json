@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/artist/artist",
     "pages/index/index",
     "pages/artist_info/artist_info",
     "pages/audio/audio",
